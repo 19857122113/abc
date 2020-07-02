@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>关于我们</title>
+	<style>
+
+.za{
+	  width:1600px;
+	   height: 1000px;
+	   background:url("22a.jpg");
+	   background-size: cover;
+	   background-repeat: no-repeat;	
+	   margin: 0 auto;
+			
+}
+		
+.zb{
+			
+	padding-top: 150px;		
+}
+h1 {
+  line-height: 50px;
+  font-size: 50px;
+  font-family: 华文行楷;
+  text-align: center;
+  /*按文字裁剪*/
+  -webkit-background-clip: text;
+  /*文字的颜色使用背景色*/
+  -webkit-text-fill-color: transparent;
+  /*设置一个背景色*/
+  background-color: #19385c;
+  /*设置渐变的背景，按对角线渐变*/
+  background-image:-webkit-linear-gradient(-45deg,rgba(0,0,0,0.6) 30%,#aff0ff 50%,rgba(0,0,0,0.6) 70%);
+  background-size: 200%;
+  /*给背景添加动画改变位置*/
+  -webkit-animation: shine 4s infinite;
+}
+@keyframes shine {
+  from {
+    background-position: 100%;
+  }
+  to {
+    background-position: 0;
+  }
+}
+
+.zc{
+	margin-left: 25%;
+	margin-top: 100px;
+	
+	}
+		
+.set {
+  position: relative;
+  font-weight: 400;
+  text-align: center;
+  width: 200px;
+  line-height: 45px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  color:black;
+  background:pick;
+  cursor: pointer;
+ }
+ 
+.anim {
+  transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+.anim:before {
+  position: relative;
+  content: '';
+  display: block;
+  margin-top: 100%;
+  background: #6CB1FF;
+}
+.anim:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+}
+.hoverable:hover > .anim:after {
+  animation: anim-out-pseudo 0.75s;
+}
+.set:hover > .anim {
+  animation: anim-out 0.75s;
+}
+@keyframes anim-out-pseudo {
+  0% {
+    background: rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    background: transparent;
+  }
+}
+@keyframes anim-out {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.zd{
+	float: right;
+	margin-right: 10%;
+	margin-top:10%;
+	
+	}
+
+.x{
+	text-decoration:none;
+	color: black;
+	font-family: 楷体;
+	font-size:18px;
+}
+	
+p{
+	font-family: 楷体;		
+	font-size:20px;		
+}
+	</style>
+</head>
+
+<body>
+<div class="za">
+	<div class="zb">
+		<h1>关于我们</h1>
+	</div>
+		<div class="zc">
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以本就极美的中国古代建筑来说，“梨花院落溶溶月，柳絮池塘淡淡风”就表现出了单纯的青砖<br>
+		   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;黛瓦所不能达到的韵味;一汪池塘，在“开在茶靡花未了”的晚春，若笼上“树头峰抱花须落，池<br>
+		   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;面鱼吹柳絮行”的景色，就会更添上一份生机；一亩农田，若有“晨兴理荒秽，带月荷锄归”的劳<br>
+		   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作，便会让人忘记“足蒸暑土气，背灼炎天光”的辛苦；一面围墙，若是有“墙里千秋墙外道，墙<br>
+		   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;里佳人笑”的故事，变回让人生出“心向往之”的情感。诗词之美，于我如同明珠，点亮了我生命<br>
+		   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中所有对美的感悟，照亮了我的精神山河。 诗歌之韵，诗歌之丽，当今世界上还有谁能表述的<br>
+		   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;出来呢？是以，它才难能可贵。
+		</p>
+	  </div>
+		<div class="zd">
+		<div class="set hoverable">
+      <div class="anim"></div>
+     <span><a href="homepage.html" class="x">返回首页</a></span>
+     </div>
+	  </div>
+	 </div>
+	
+</body>
+</html>
