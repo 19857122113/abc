@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+
+.ss{
+	width:1600px;
+	height:1000px;
+    background: url("b.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: top center;
+    padding: 0;	
+	margin: 0 auto;
+	
+}
+	
+.ac{
+	margin-left: 250px;
+	margin-top: 200px;
+	float:left;		
+}
+.ad{
+	margin-right:180px;	
+	padding-top: 200px;
+}
+h1{
+	text-align: center;
+	font-family: 华文行楷;
+	font-size: 30px;
+}
+.af{
+	 text-align: center;
+	 font-family: 华文行楷;	
+	 font-size: 20px;
+}
+.ae{
+	 text-align: center;
+	 font-family: 华文行楷;	
+	 font-size: 25px;		
+}
+
+.ca{
+	margin-top:10%;
+	
+}
+.cb{
+	margin-left: 6%;
+	float: left;		
+}
+.ce{
+   font-family:华文行楷;
+   font-size: 20px;
+   text-align: left;		
+}
+.cf{
+   font-family:华文行楷;
+   font-size: 20px;
+   text-align: left;		
+}
+.cc{
+	margin-bottom:2%;
+	float:right;
+	margin-right: 7%;
+}
+.ba{
+	text-decoration:none;
+	color:black;
+	font-family: 楷体;
+	font-size:22px;
+}
+		
+.set {
+  position: relative;
+  font-weight: 400;
+  text-align: center;
+  width: 200px;
+  line-height: 45px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  color: #FFFFFF;
+  background:#8BC29C
+  cursor: pointer;
+	margin-left: 600px;
+	margin-top: 70px;
+ }
+  
+.anim {
+  transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+.anim:before {
+  position: relative;
+  content: '';
+  display: block;
+  margin-top: 100%;
+  background: #6CB1FF;
+}
+.anim:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+}
+.hoverable:hover > .anim:after {
+  animation: anim-out-pseudo 0.75s;
+}
+.set:hover > .anim {
+  animation: anim-out 0.75s;
+}
+@keyframes anim-out-pseudo {
+  0% {
+    background: rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    background: transparent;
+  }
+}
+@keyframes anim-out {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+	</style>
+</head>
+
+<body>
+<div class="ss">
+	<div class="ab">
+	<div class="ac">
+		
+		<img src="23a.jpg">
+		
+		</div>
+    <div class="ad"><h1>游山西村</h1>
+		<p class="af">陆游</p>
+		<p class="ae">莫笑农家腊酒浑，丰年留客足鸡豚。<br>
+           山重水复疑无路，柳暗花明又一村。<br>
+           箫鼓追随春社近，衣冠简朴古风存。<br>
+           从今若许闲乘月，拄杖无时夜叩门。</p>
+		</div>
+	</div>
+	
+	<div class="ca">
+		<div class="cb"><p class="ce">陆游（1125—1210），宋代爱国诗人、词人。字务观，号放翁，越州山阴（今浙江绍兴）人。<br>
+			在生前即有“小李白”之称，不仅成为南宋一代诗坛领袖，而且在中国文学史上享有崇高<br>
+			地位，存诗9300多首，是文学史上存诗最多的诗人。</p>
+		<p class="cf">此诗作于宋孝宗乾道三年（1167）初春，当时陆游正罢官闲居在家。在此之前，陆游曾任隆兴<br>
+			府（今江西南昌市）通判，因在隆兴二年（1164）积极支持抗金将帅张浚北伐，符离战败后，<br>
+			遭到朝廷中主和投降派的排挤打击，以“交结台谏，鼓唱是非，力说张浚用兵”的罪名，<br>
+			从隆兴府通判任上罢官归里。陆游回到家乡的心情是相当复杂的，苦闷和激愤的感情交织在<br>
+			一起，然而他并不心灰意冷。“慷慨心犹壮”（《闻雨》）的爱国情绪，使他在农村生活中<br>
+			感受到希望和光明，并将这种感受倾泻到自己的诗歌创作里。</p>
+			<div class="set hoverable">
+           <div class="anim"></div>
+           <a href="poem.html" class="ba"><span>返回上一页</span></a>
+          </div>
+		</div>
+		
+		<div class="cc">
+		<video src="../Desktop/a作业/小学期/images/ab.mp4" width="400" height="300" controls>	
+		</video>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
