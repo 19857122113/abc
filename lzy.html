@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+.lzy{
+	width:1600px;
+	height:1000px;
+	padding: 0;	
+	margin: 0 auto;
+	background: url("66.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+	.l1{
+		padding-top: 450px;
+		padding-left: 65px;
+		float: left;
+		width:300px;
+		height:200px;
+	}
+	.l2{
+		padding-top:220px;
+		padding-left:620px;
+		position:relative;
+		width:500px;
+		height:200px;
+	}
+	.jx{
+		font-family: 华文行楷;
+		font-size:40px;
+		padding-left: 100px;
+	}
+	.jx1{
+		font-family: 华文行楷;
+		font-size:30px;
+	}
+	.jx2{
+		padding-top: 50px;
+	}
+	.l3 {
+		float: right;
+	    padding-right: 60px;
+	}
+
+	
+	
+
+.set {
+  position: relative;
+  font-weight: 400;
+  text-align: center;
+  width: 200px;
+  line-height: 45px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  color: #FFFFFF;
+  background:#8BC29C
+  cursor: pointer;
+	margin-left: 600px;
+	margin-top: 70px;
+ }
+  
+.anim {
+  transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+.anim:before {
+  position: relative;
+  content: '';
+  display: block;
+  margin-top: 100%;
+  background: #6CB1FF;
+}
+.anim:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+}
+.hoverable:hover > .anim:after {
+  animation: anim-out-pseudo 0.75s;
+}
+.set:hover > .anim {
+  animation: anim-out 0.75s;
+}
+@keyframes anim-out-pseudo {
+  0% {
+    background: rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    background: transparent;
+  }
+}
+@keyframes anim-out {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.l6{
+	text-decoration:none;
+	color:black;	
+	font-family: 楷体;
+	font-size:22px;		
+}
+	
+</style>
+</head>
+
+<body>
+	<div class="lzy">
+		<div class="l1"><img src="68.jpg"></div>
+		<div class="l2">
+			
+		<p class="jx">江&nbsp;&nbsp;&nbsp;&nbsp;雪</p>
+		<p class="jx1">千山鸟飞绝，万径人踪灭。<br>
+            孤舟蓑笠翁，独钓寒江雪。<br></p>
+		<p class="jx2">《江雪》是唐代诗人柳宗元的一首山水诗，描述了<br>
+			一幅江乡雪景图。山山是雪，路路皆白。飞鸟绝迹，<br>
+			人踪湮没。遐景苍茫，迩景孤冷。意境幽僻，情调凄<br>
+			寂。渔翁形象，精雕细琢，清晰明朗，完整突出。诗<br>
+			采用入声韵，韵促味永，刚劲有力。历代诗人无不交<br>
+			口称绝。千古丹青妙手，也争相以此为题，绘出不少<br>
+			动人的江天雪景图。唐顺宗永贞元年，柳宗元参加了<br>
+			王叔文为首的政治革新运动。由于保守势力与宦官的<br>
+			联合反攻，致使革新失败。因此，柳宗元被贬官到有<br>
+			“南荒”之称的永州。柳宗元自从被贬到永州之后，精<br>
+			神上受到很大刺激和压抑，他就借描写山水景物，借<br>
+			歌咏隐居在山水之间的渔翁，来寄托自己清高而孤傲<br>
+			的情感，抒发自己在政治上失意的郁闷苦恼。于是，<br>
+			他怀着幽愤的心情，写下了这首令人传颂的名诗。</p>	
+		<div class="set hoverable">
+           <div class="anim"></div>
+           <a href="poem.html" class="l6"><span>返回上一页</span></a>
+          </div>
+			
+		</div>
+		<div class="l3">
+		<video src="af.mp4" width="400" height="300" controls><video>
+		</div>
+		
+</body>
+</html>
