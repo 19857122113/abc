@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>小测试</title>
+	<style>
+	.test{
+	width:1600px;
+	height:1000px;
+	padding: 0;	
+	margin: 0 auto;
+	background: url("88a.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	}
+		
+		.test1{
+			padding-left: 500px;
+			padding-top: 210px;
+		}
+		p{
+			font-family: 华文行楷;
+			font-size: 30px;
+		}
+		
+		
+.set {
+  position: relative;
+  font-weight: 400;
+  text-align: center;
+  width: 200px;
+  line-height: 45px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  color: #FFFFFF;
+  background:#8BC29C
+  cursor: pointer;
+	margin-left:300px;
+	margin-top: 40px;
+ }
+  
+.anim {
+  transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+.anim:before {
+  position: relative;
+  content: '';
+  display: block;
+  margin-top: 100%;
+  background: #6CB1FF;
+}
+.anim:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+}
+.hoverable:hover > .anim:after {
+  animation: anim-out-pseudo 0.75s;
+}
+.set:hover > .anim {
+  animation: anim-out 0.75s;
+}
+@keyframes anim-out-pseudo {
+  0% {
+    background: rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    background: transparent;
+  }
+}
+@keyframes anim-out {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.ba{
+	text-decoration:none;
+	color:black;	
+	font-family:华文行楷;
+	font-size:22px;		
+}
+
+.test2{
+			float: left;
+		}
+
+.test3{
+		float: right;
+	margin-right: 330px;
+	
+		}
+	</style>
+
+	<script>
+      var result='C';
+      function check(){
+      var obj = document.getElementsByName("practise");
+      for(var i=0; i<obj.length; i++){
+        if(obj[i].checked){
+			if(obj[i].value==result)
+            	alert("回答正确");
+			else
+				alert("回答错误");
+		}
+    }				
+}
+</script>
+</head>
+	
+	
+<body>
+	<div class="test">
+		<div class="test1">
+		<form>
+			<p>【选择题】以下哪个被后人称为诗魔？（ ）</p>
+			<p><input type="radio"  name ="practise" value="A">A.李白</p>
+			<p><input type="radio"  name ="practise" value="B">B.杜甫</p>
+			<p><input type="radio"  name ="practise" value="C">C.白居易</p>
+			<p><input type="radio"  name ="practise" value="D">D.刘禹锡</p>
+			<p><input type="button" class="butt3" onClick="check()" value="提交"></p>
+		</form>
+	
+		</div>
+		<div class="test2">
+			<div class="set hoverable">
+           <div class="anim"></div>
+           <a href="choice.html" class="ba"><span>返回上一页</span></a>
+          </div>
+           
+		</div>
+		<div class="test3">
+			<div class="set hoverable">
+           <div class="anim"></div>
+		<a href="testa.html" class="ba"><span>下一题</span></a>
+		 </div>
+		</div>
+    </div>	
+</body>	
+</html>
