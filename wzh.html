@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>王之涣</title>
+	<style>
+
+.b{
+	width:1600px;
+	height:1000px;
+    background: url("43.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: top center;
+    padding: 0;	
+	margin: 0 auto;		
+			
+}
+
+.bt{
+	margin-top: 180px;
+	margin-left: 300px;		
+	float: left;		
+}
+		
+.b1{
+	
+	  font-family: 	华文行楷;
+	  font-size:40px;
+	}
+		
+.b2{
+	font-family: 	华文行楷;
+	font-size:20px;	
+	margin-left:50%;
+}
+.b3{
+	font-family: 	华文行楷;
+	font-size:30px;	
+	margin-left:100px;
+}
+
+.bo{
+   padding-top: 180px;
+	margin-right:200px;			
+}
+
+.b4{
+	font-family: 	华文行楷;
+	font-size:25px;	
+	margin-left:100px;
+}
+		.bd{
+		margin-top: 10%;	
+		
+		}
+		.br{
+			margin-left: 7%;
+			font-family: 华文行楷;
+			font-size: 20px;
+			float: left;
+		}
+		.bg{
+			
+			margin-left: 7%;
+			
+		}
+		
+.set {
+  position: relative;
+  font-weight: 400;
+  text-align: center;
+  width: 200px;
+  line-height: 45px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  color: #FFFFFF;
+  cursor: pointer;
+	margin-left: 600px;
+	margin-top: 70px;
+ }
+  
+.anim {
+  transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+.anim:before {
+  position: relative;
+  content: '';
+  display: block;
+  margin-top: 100%;
+  background: #6CB1FF;
+}
+.anim:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+}
+.hoverable:hover > .anim:after {
+  animation: anim-out-pseudo 0.75s;
+}
+.set:hover > .anim {
+  animation: anim-out 0.75s;
+}
+@keyframes anim-out-pseudo {
+  0% {
+    background: rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    background: transparent;
+  }
+}
+@keyframes anim-out {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.ba{
+	text-decoration:none;
+	color:black;	
+	font-family: 楷体;
+	font-size:22px;		
+}
+	
+	</style>
+</head>
+<body>
+	<div class="b">
+	<div class="bc">
+	<div class="bt"> 
+		<img src="36b.jpg" alt="" />
+		</div>
+    <div class="bo"  align="center">
+		<h1 class="b1">登鹳雀楼</h1>
+		<p class="b2">王之涣</p>
+		<p class="b3">白日依山尽，黄河入海流。<br>
+            欲穷千里目，更上一层楼。<br><p>
+	 </div>
+	</div>
+	
+	<div class="bd">
+		<div class="br"><p> 王之涣（688年—742年），是盛唐时期的著名诗人，字季凌，汉族，绛州（今山西新绛县）人。<br>
+			豪放不羁，常击剑悲歌，其诗多被当时乐工制曲歌唱。名动一时，他常与高适、王昌龄等相唱<br>
+			和，以善于描写边塞风光著称<p>
+		<p>作者早年及第，曾任过冀州衡水（今河北衡水）县的主薄，不久因遭人诬陷而罢官，不到三十岁<br>
+			的王之涣从此过上了访友漫游的生活。《登鹳雀楼》是唐代诗人王之涣创作的一首诗。此诗前两<br>
+			句写的是自然景色，但开笔就有缩万里于咫尺，使咫尺有万里之势；后两句写意，写的出人意料，<br>
+			把哲理与景物、情势溶化得天衣无缝。诗人受大自然震撼的心灵，悟出的是朴素而深刻的哲理，<br>
+			能够催人抛弃固步自封的浅见陋识，登高放眼，不断拓出愈益美好的崭新境界。清代诗评家认为：<br>
+			“王诗短短二十字，前十字大意已尽，后十字有尺幅千里之势。”这首诗是唐代五言诗的压卷之作，<br>
+			王之涣因这首五言绝句而名垂千古，鹳雀楼也因此诗而名扬中华。</p>
+			
+			<div class="set hoverable">
+           <div class="anim"></div>
+           <a href="poem.html" class="ba"><span>返回上一页</span></a>
+          </div>
+		</div>
+		<div class="bg">
+			<video src="ac.mp4" width="400" height="300" controls><video>
+		</div>
+		</div>
+		
+</div>
+</body>
+</html>
