@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+.lzy{
+	width:1600px;
+	height:1000px;
+	padding: 0;	
+	margin: 0 auto;
+	background: url("66.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+	.l1{
+		padding-top: 450px;
+		padding-left:65px;
+		float: left;
+		width:300px;
+		height:200px;
+	}
+	.l2{
+		padding-top:220px;
+		padding-left:580px;
+		position:relative;
+		width:500px;
+		height:200px;
+	}
+	.jx{
+		font-family: 华文行楷;
+		font-size:40px;
+		padding-left: 120px;
+	}
+	.jx1{
+		font-family: 华文行楷;
+		font-size:30px;
+	}
+	.jx2{
+		padding-top: 50px;
+	}
+	.l3 {
+		float: right;
+	    padding-right: 60px;
+	}
+
+	
+	
+
+.set {
+  position: relative;
+  font-weight: 400;
+  text-align: center;
+  width: 200px;
+  line-height: 45px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  color: #FFFFFF;
+  background:#8BC29C
+  cursor: pointer;
+	margin-left: 600px;
+	margin-top: 70px;
+ }
+  
+.anim {
+  transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+.anim:before {
+  position: relative;
+  content: '';
+  display: block;
+  margin-top: 100%;
+  background: #6CB1FF;
+}
+.anim:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+}
+.hoverable:hover > .anim:after {
+  animation: anim-out-pseudo 0.75s;
+}
+.set:hover > .anim {
+  animation: anim-out 0.75s;
+}
+@keyframes anim-out-pseudo {
+  0% {
+    background: rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    background: transparent;
+  }
+}
+@keyframes anim-out {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.l6{
+	text-decoration:none;
+	color:black;	
+	font-family: 楷体;
+	font-size:22px;		
+}
+	
+</style>
+</head>
+
+<body>
+	<div class="lzy">
+		<div class="l1"><img src="70.jpg"></div>
+		<div class="l2">
+			
+		<p class="jx">滁&nbsp;州&nbsp;西&nbsp;涧</p>
+		<p class="jx1">独怜幽草涧边生，上有黄鹂深树鸣。<br>
+            春潮带雨晚来急，野渡无人舟自横。<br></p>
+		<p class="jx2">《滁州西涧》是唐代诗人韦应物的一首写景七言绝句。作者<br>
+			任滁州刺史时，游览至滁州西涧，写下了这首诗情浓郁的小<br>
+			诗。诗里写的虽然是平常的景物，但经诗人的点染，却成了<br>
+			一幅意境幽深的有韵之画，还蕴含了诗人一种不在其位 、<br>
+			不得其用的无奈与忧伤情怀，也就是作者对自己怀才不遇的<br>
+			不平。这是山水诗的名篇，也是韦应物的代表作之一，写于<br>
+			滁州刺史任上。韦应物生性高洁，爱幽静，好诗文，笃信佛<br>
+			教，鲜食寡欲，所居每日必焚香扫地而坐。他时常独步郊外<br>
+			滁州西涧便是他常光顾的地方。作者最喜爱西涧清幽的景色<br>，
+			一天游览至滁州西涧（在滁州城西郊野），写下了这首诗情浓<br>
+			郁的小诗，后来成为他的代表作之一。唐滁州的治所即今安徽<br>
+			滁州市市区，西涧在滁州城西郊外。这首诗描写了山涧水边的<br>
+			幽静景象和诗人春游滁州西涧赏景和晚潮带雨的野渡所见。</p>	
+		<div class="set hoverable">
+           <div class="anim"></div>
+           <a href="poem.html" class="l6"><span>返回上一页</span></a>
+          </div>
+			
+		</div>
+		<div class="l3">
+		<video src="ag.mp4" width="400" height="300" controls><video>
+		</div>
+		
+</body>
+</html>
