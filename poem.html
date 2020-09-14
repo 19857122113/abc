@@ -1,0 +1,216 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS3点击显示</title>
+<style>
+*{
+	margin:0; 
+	padding:0;
+	}
+	.vc{
+		width: 1600px;
+		height: 1000px;
+		padding: 0;	
+	    margin: 0 auto;
+		background: url("90.png");
+		background-repeat: no-repeat;
+	    background-size: cover;
+	    
+	}
+
+a:link {
+  text-decoration:none;
+  color:black;
+}
+a:visited {
+  text-decoration:none;
+  color:black;
+}
+a:hover {
+  text-decoration:underline;
+  color:black;
+}
+a:active {
+  text-decoration:underline;
+  color:black;
+}
+
+
+.carre_couleur{
+  width:200px;
+  height:200px;
+  display:inline-block;
+  position:relative;
+  margin-top:80px;
+	margin-right: 100px;
+}
+	
+.img{
+  width:200px;
+  height:200px;	
+
+}
+.base_hov .retract{
+  transition:all 200ms ease-in;
+  transform-origin:50% 20%;
+  transform:scale(1);
+  width:200px;
+  height:200px;
+  position:absolute;
+  z-index:2;
+  left:0;
+}
+.base_hov:hover .retract{
+  transition:all 200ms ease-in;
+  transform:scale(0.6);
+}
+.acced{
+  width:180px;
+  padding:10px;
+  bottom:0;
+  position:absolute;
+  z-index:1;
+  text-align:left;
+}
+.big_acced{
+  color:black;
+  font-size:25px;
+  font-weight:400;
+}
+.middle_acced{
+  color:white;
+  font-size:15px;
+  font-weight:400;
+}
+
+.ly{
+	  margin-top: 100px;	
+	  
+	}
+
+
+.ba{
+	text-decoration:none;
+	position: relative;
+	top:100px;
+	left: 770px;
+	color:black;	
+	font-family: 楷体;
+	font-size:27px;		
+}	
+ .n1{
+		font-family: 华文行楷;
+	    font-size: 40px;
+	    position: relative;
+	    text-align: center;
+	    padding-top: 50px;
+		}
+	
+	 .n2{
+		font-family: 华文行楷;
+	    font-size: 30px;
+	    position: relative;
+	    text-align: center;
+	    padding-top: 20px;
+		}
+	
+	.vd1 {
+		width:1600px;	
+	}
+	p{
+		padding-top: 45px;
+		text-align: center;
+	}
+	
+</style>
+</head>
+<body>	
+
+<div class="vc">
+	
+	<div class="vb">
+	<h1  class="n1">诗词之韵</h1>
+		<p  class="n2">The rhythm of poetry</p>
+	</div>
+	<div class="vd">
+
+	<div class="a1">
+		
+	<div align="center">
+		
+   <div class="carre_couleur base_hov" style="background-color:#f8b334;"> 
+    <div class="retract" style="background-color:#f8b334;">
+		<a href="ly.html"><img src="23a.jpg"></a>
+    </div>
+    <div class="acced">
+      <div class="big_acced" style="color:#f39c12;">游山西村</div>
+      <div class="middle_acced">——陆游</div>
+    </div>
+  </div>
+		
+	   <div class="carre_couleur base_hov" style="background-color:#f8b334;"> 
+    <div class="retract" style="background-color:#f8b334;">
+		<a href="wzh.html"><img src="36a.jpg"></a>
+    </div>
+    <div class="acced">
+      <div class="big_acced" style="color:#f39c12;">登鹳雀楼</div>
+      <div class="middle_acced">——王之涣</div>
+    </div>
+  </div>
+		
+		 <div class="carre_couleur base_hov" style="background-color:#f8b334;"> 
+    <div class="retract" style="background-color:#f8b334;">
+		<a href="lb.html"><img src="26a.jpg"></a>
+    </div>
+    <div class="acced">
+      <div class="big_acced" style="color:#f39c12;">望天门山</div>
+      <div class="middle_acced">——李白</div>
+    </div>
+  </div>
+		
+</div>
+	
+	
+	<div align="center">
+		
+   <div class="carre_couleur base_hov" style="background-color:#f8b334;"> 
+    <div class="retract" style="background-color:#f8b334;">
+		<a href="df.html"><img src="27a.jpg"></a>
+    </div>
+    <div class="acced">
+      <div class="big_acced" style="color:#f39c12;">望岳</div>
+      <div class="middle_acced">——杜甫</div>
+    </div>
+  </div>
+		
+	   <div class="carre_couleur base_hov" style="background-color:#f8b334;"> 
+    <div class="retract" style="background-color:#f8b334;">
+		<a href="lzy.html"><img src="28a.jpg"></a>
+    </div>
+    <div class="acced">
+      <div class="big_acced" style="color:#f39c12;">江雪</div>
+      <div class="middle_acced">——柳宗元</div>
+    </div>
+  </div>
+		
+		 <div class="carre_couleur base_hov" style="background-color:#f8b334;"> 
+    <div class="retract" style="background-color:#f8b334;">
+		<a href="wyw.html"><img src="62a.jpg">
+    </div>
+    <div class="acced">
+      <div class="big_acced" style="color:#f39c12;">滁州西涧</div>
+      <div class="middle_acced">——韦应物</div>
+    </div>
+  </div>		
+</div>	
+		
+	
+           <a href="homepage.html" class="ba">返回首页</a>
+          
+		
+</div>
+</div>
+</body>
+</html>
